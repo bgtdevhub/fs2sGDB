@@ -1,0 +1,64 @@
+.btn {
+  border: 0;
+  background: $white-pale;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 $space-l;
+  border-radius: 3px;
+  color: $gray-darkest;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: {
+    property: background, color, box-shadow;
+    duration: 0.15s;
+    timing-function: ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    background: $blue;
+    color: $white;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: 0 0 4px $blue;
+  }
+
+  &-primary {
+    background: $blue;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken($blue, 5%);
+    }
+  }
+
+  &--disabled {
+    background: $gray;
+    color: $white;
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $gray;
+    }
+  }
+
+  &-loader {
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: auto;
+    border-radius: 2px;
+    background: $white;
+    animation: barSlideLoader 1s ease infinite;
+  }
+}

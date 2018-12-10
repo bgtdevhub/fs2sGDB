@@ -1,0 +1,38 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  &-container {
+    margin: auto;
+    width: calc(100% - #{$space});
+    max-width: 300px;
+  }
+
+  &-title {
+    padding: $space-l;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  &-panel {
+    text-align: center;
+    border: 1px solid $gray-light;
+    border-radius: 4px;
+
+    &-title {
+      padding: 0 $space;
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid $gray-light;
+    }
+
+    &-body {
+      padding: $space-l;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

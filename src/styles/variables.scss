@@ -1,0 +1,28 @@
+$blue: #2e86ab;
+$blue-light: lighten($blue, 25%);
+$green: #2eab88;
+$red: #ed254e;
+$yellow: #f9dc5c;
+
+$white: #fefefe;
+$white-near: #f7f9f9;
+$white-pale: #eef2f3;
+$gray-light: #e4e8ea;
+$gray: #c6ccd0;
+$gray-dark: #37515f;
+$gray-darkest: #011936;
+
+$space: 10px;
+
+$space-s: $space / 2;
+$space-l: $space * 2;
+$space-xl: $space * 4;
+$space-xxl: $space * 8;
+
+$font-size-xs: 0.65rem;
+$font-size-s: 0.75rem;
+$font-size-l: 1.25rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 4rem;
+
+$ease-out-minor: cubic-bezier(0.58, 1.01, 0.58, 1);

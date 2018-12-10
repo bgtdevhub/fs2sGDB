@@ -1,0 +1,103 @@
+@keyframes ping {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes fadePing {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glowPing {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLoader {
+  70% {
+    transform: translateX(198px);
+  }
+  0%,
+  10%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+}
+
+@keyframes dotLoader {
+  0%,
+  25% {
+    opacity: 0;
+    box-shadow: none;
+  }
+
+  25.1%,
+  50% {
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  50.1%,
+  75% {
+    opacity: 1;
+    box-shadow: 6px 0 $blue;
+  }
+
+  75.1%,
+  100% {
+    opacity: 1;
+    box-shadow: 6px 0 $blue, 12px 0 $blue;
+  }
+}
+
+@keyframes barSlideLoader {
+  0%,
+  25%,
+  75.1%,
+  100% {
+    transform-origin: left;
+  }
+
+  25.1%,
+  75% {
+    transform-origin: right;
+  }
+
+  0%,
+  50%,
+  100% {
+    transform: scaleX(0.1);
+  }
+
+  25%,
+  75% {
+    transform: scaleX(1);
+  }
+}

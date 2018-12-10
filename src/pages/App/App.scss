@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  padding: $space-xl 0;
+}
+
+.column {
+  padding: 0 $space-l;
+
+  &-main {
+    flex-grow: 1;
+  }
+
+  &-side {
+    flex: 0 0 240px;
+  }
+}
+
+.controls {
+  &-item {
+    & + & {
+      margin-top: $space-l;
+      padding-top: $space-l;
+      border-top: 1px solid $gray-light;
+    }
+
+    &-title {
+      font-size: $font-size-s;
+      margin-bottom: $space;
+      padding: $space;
+      background: $white-pale;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.settings {
+  &-item {
+    padding: $space-s 0;
+  }
+
+  &-label {
+    font-size: $font-size-s;
+    margin-bottom: $space-s;
+  }
+
+  &-loader {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $blue;
+    position: relative;
+    margin-left: $space;
+    animation: dotLoader 1s steps(4, end) infinite;
+  }
+}

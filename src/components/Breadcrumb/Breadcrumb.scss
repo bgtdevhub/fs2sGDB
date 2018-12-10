@@ -1,0 +1,53 @@
+.path {
+  display: inline-block;
+  background: $white-pale;
+  font-size: $font-size-s;
+  margin: $space-l 0;
+  border-radius: 4px;
+  height: 20px;
+  line-height: 20px;
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+
+    & + & {
+      margin-left: $space-l;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        top: calc(50% - 5px);
+        left: -10px;
+        background: $gray-dark;
+        transform: rotate(15deg);
+      }
+    }
+  }
+
+  &-link {
+    height: 100%;
+    padding: 0 $space;
+    background: none;
+    border: 0;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    color: $gray-dark;
+    font-size: $font-size-s;
+
+    &:hover {
+      background: $gray;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
