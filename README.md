@@ -1,10 +1,10 @@
-# fs2sGDB
+# fs2fGDB
 
 An app to export Feature Service to local in specified format and output settings.
 
 Login with [Arcgis Online](http://arcgis.com) account.
 
-A working [demo](http://bgtdevhub-fs2sgdb.s3-website.us-east-2.amazonaws.com).
+A working [demo](http://bgtdevhub-fs2fgdb.s3-website-ap-southeast-1.amazonaws.com).
 
 ## Installation
 

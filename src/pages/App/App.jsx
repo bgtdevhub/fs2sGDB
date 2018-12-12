@@ -247,7 +247,7 @@ class App extends Component {
       <div>
         <header className='header'>
           <div className='container'>
-            <div className='app-title'>fs2sGDB</div>
+            <div className='app-title'>fs2fGDB</div>
           </div>
         </header>
         <main className='main container'>
